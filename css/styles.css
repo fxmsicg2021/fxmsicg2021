@@ -1,0 +1,71 @@
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: #61122f;
+  font-family: 'Oxygen', sans-serif;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: #ffffff;
+  border-radius: 0;
+  border: 0;
+}
+
+#logo-img {
+  background: url('../images/fxm/fxm_001.png') no-repeat;
+  width: 225px;
+  height: 225px;
+  margin: 10px 10px 10px 10px;
+}
+
+.navbar-brand {
+  padding-top: 10px;
+}
+
+.navbar-brand h1 { 
+  font-family: sans-serif;
+  background-color: #ff1d99;
+  color: #ffffff;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+#nav-list {
+  margin-top: 0px;
+}
+
+#nav-list a {
+  color: #ff1d99;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#nav-list a:hover {
+  background: #fae2f8;
+}
+
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #ff1d99;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+/* END HEADER */
