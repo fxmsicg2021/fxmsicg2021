@@ -20,6 +20,7 @@ body {
 }
 
 .navbar-brand {
+  margin-top: 90px;
   padding-top: 10px;
 }
 
@@ -43,7 +44,7 @@ body {
 }
 
 #nav-list {
-  margin-top: 0px;
+  margin-top: 80px;
 }
 
 #nav-list a {
@@ -64,8 +65,150 @@ body {
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
   border: 1px solid #ff1d99;
 }
+
 .navbar-header button.navbar-toggle {
   clear: both;
-  margin-top: -30px;
+  margin-top: -75px;
 }
-/* END HEADER */
+/** END HEADER **/
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+  #logo-img {
+    width: 150px;
+    height: 150px;
+    margin: 5px 5px 5px 5px;
+    background-size: contain;
+  }
+
+  .navbar-brand {
+    margin-top: 50px;
+  }
+
+  .navbar-brand h1 { 
+    font-size: 1em;
+  }
+
+  #nav-list {
+    margin-top: 40px;
+  }
+
+  #nav-list a {
+    font-size: .9em;
+  }
+
+  #nav-list a span {
+    font-size: 1.4em;
+  }
+  /* End Header */
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Header */
+  #logo-img {
+    width: 100px;
+    height: 100px;
+    margin: 5px 5px 5px 5px;
+    background-size: contain;
+  }
+
+  .navbar-brand {
+    margin-top: 30px;
+  }
+
+  .navbar-brand h1 { 
+    font-size: .75em;
+  }
+
+  #nav-list {
+    margin-top: 25px;
+  }
+
+  #nav-list a {
+    font-size: .65em;
+  }
+
+  #nav-list a span {
+    font-size: 1.4em;
+  }
+  /* End Header */
+
+}
+
+/********** Extra small devices only **********/
+@media (min-width: 481px) and (max-width: 767px) {
+  /* Header */
+  #logo-img {
+    width: 100px;
+    height: 100px;
+    margin: 5px 5px 5px 5px;
+    background-size: contain;
+  }
+
+  .navbar-brand {
+    margin-top: 30px;
+  }
+
+  .navbar-brand h1 { 
+    font-size: .75em;
+  }
+
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+ 
+  /* End Header */
+
+}
+
+/********** Super extra small devices only **********/
+@media (max-width: 480px) {
+  /* Header */
+  #logo-img {
+    width: 150px;
+    height: 150px;
+    margin: 5px 5px 5px 5px;
+    background-size: contain;
+  }
+
+  .navbar-header button.navbar-toggle {
+    clear: both;
+    margin-top: 0px;
+  }
+
+  .navbar-brand {
+    margin-top: 0px;
+    padding-top: 0;
+  }
+
+  .navbar-brand h1 { 
+    width: auto;
+    height: auto;
+    font-size: 5vw;
+    line-height: 1;
+  }
+
+  .navbar-header button.navbar-toggle {
+    margin-top: -205px;
+  }
+
+  /* End Header */
+
+}
