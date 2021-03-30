@@ -199,6 +199,12 @@ img {
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
+  .fotodelcandidato {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
 
   .quelagente {
     font-size: 50px;
@@ -243,6 +249,12 @@ img {
   /* End Header */
 
   /* Welcome */
+  .fotodelcandidato {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
   
   /* End of Welcome */
 
@@ -280,6 +292,7 @@ img {
   /* End Header */
 
   /* Welcome */
+  
   .quelagente {
     font-size: 30px;
   }
@@ -356,6 +369,13 @@ img {
   /* End Header */
 
   /* Welcome */
+
+  .mensajebienvenida {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 90%;
+  }
+
   .quelagente {
     font-size: 30px;
   }
@@ -430,6 +450,13 @@ img {
   /* End Header */
 
   /* Welcome */
+
+  .mensajebienvenida {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 90%;
+  }
+  
   .quelagente {
     font-size: 20px;
   }
