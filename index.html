@@ -9,64 +9,315 @@
     <link rel="stylesheet" href="css/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
-  </head>
-<body>
-  <header>
-    <nav id="header-nav" class="navbar navbar-default">
-      <div class="container">
-        <div class="navbar-header">
-          <!--Logo del partido-->
-          <a href="http://www.fuerzapormexico.org.mx/">
-            <div class="pull-left" id="logo-img"></div>
-          </a>
 
-          <!--Fecha de la eleccion-->
-          <div class="navbar-brand">
-            <a href="https://www.ine.mx/voto-y-elecciones/elecciones-2021/">
-              <h1>Fecha de la eleccion: 06/06/2021</h1>
+    <!--Swiper-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  </head>
+
+  <body>
+    <!--For facebook-->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0" nonce="Iv7HL6Ia"></script>
+
+    <header>
+      <!--Navigation bar-->
+      <nav id="header-nav" class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <!--Logo del partido-->
+            <a href="http://www.fuerzapormexico.org.mx/" target="_blank">
+              <div class="pull-left" id="logo-img"></div>
             </a>
+
+            <!--Fecha de la eleccion-->
+            <div class="navbar-brand">
+              <a href="https://www.ine.mx/voto-y-elecciones/elecciones-2021/" target="_blank">
+                <h1>Fecha de la eleccion: 06/06/2021</h1>
+              </a>
+            </div>
+
+            <!--Collapsed menu buton-->
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
           </div>
 
-          <!--Collapsed menu buton-->
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+          <!--Menu butons-->
+          <div id="collapsable-nav" class="collapse navbar-collapse">
+            <ul id="nav-list" class="nav navbar-nav navbar-right">
+              <li>
+                <a href="index.html">
+                <span class="glyphicon glyphicon-home"></span><br class="hidden-xs"> Inicio</a>
+              </li>
+              <li>
+                <a href="planilla.html">
+                <span class="glyphicon glyphicon-user"></span><br class="hidden-xs"> Planilla</a>
+              </li>
+              <li>
+                <a href="propuestas.html">
+                <span class="glyphicon glyphicon-bell"></span><br class="hidden-xs"> Propuestas</a>
+              </li>
+              <li>
+                <a href="tu_mandas.html">
+                <span class="glyphicon glyphicon-bullhorn"></span><br class="hidden-xs"> Tu mandas!</a>
+              </li>
+            </ul><!-- #nav-list -->
+          </div><!-- .collapse .navbar-collapse -->
+        </div><!-- .container -->
+        <hr style="width:90%;text-align:center;height:5px;background-color:#ff1d99">
+      </nav>
+      <!--End of navigation bar-->
+      
+      <!--Welcome-->
+      <div id="welcome" class="container">
+        <div id="welcome_content" class="row">
+          <!--Foto del candidato-->
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <a href="001_presidente.html">
+              <img class="fotodelcandidato" src="https://via.placeholder.com/450x300/ff1d99/ffffff">
+            </a>
+          </div>
+        
+          <!--Que la gente mande-->
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <p class="quelagente">Que la gente mande!</p>
+          </div>
+
+          <!--Mensaje de bienvenida-->
+          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed mauris at justo vulputate euismod nec non magna. Integer at lacus id urna sollicitudin bibendum a non turpis. Etiam blandit vehicula consequat. Fusce dignissim porttitor velit, at posuere est ultrices ac. Nam odio arcu, suscipit tincidunt fringilla non, dapibus in elit. Integer at nunc bibendum, porta nunc nec, gravida lectus. Sed felis tellus, ornare non turpis sit amet, bibendum tempus sem. Suspendisse cursus tortor sed neque pellentesque, in tempor tortor facilisis. Donec ac leo tristique, rhoncus nisi vel, aliquam velit. Vestibulum eu varius ex. Etiam ornare pulvinar magna vitae fermentum. Ut vel nunc congue, varius ipsum eget, bibendum ligula. Nunc mollis accumsan tortor, at vehicula quam consectetur a.</p>
+          </div>
+        </div>
+        <hr style="width:100%;text-align:center;height:2px;background-color:#ff1d99">
+      </div>
+      <!--End of welcome-->
+
+      <!--Sliding bar-->
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col-md-12">
+              <h2 class="miembrosplanilla">Miembros de la planilla</h2>
+          </div>
+        </div><!--End of row-->
+
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card-img">
+                  <a href="002_presidente_sup.html">
+                    <img src="https://via.placeholder.com/200/ff1d99/ffffff">
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5>Nombre Apellido Apellido</h5>
+                  <h4 class="pt-1 pb-2">Presidente suplente</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card-img">
+                  <a href="003_sindico.html">
+                    <img src="https://via.placeholder.com/200/ff1d99/ffffff">
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5>Nombre Apellido Apellido</h5>
+                  <h4 class="pt-1 pb-2">Sindico</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card-img">
+                  <a href="004_sindico_sup.html">
+                    <img src="https://via.placeholder.com/200/ff1d99/ffffff">
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5>Nombre Apellido Apellido</h5>
+                  <h4 class="pt-1 pb-2">Sindico suplente</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card-img">
+                  <img src="https://via.placeholder.com/200/ff1d99/ffffff">
+                </div>
+                <div class="card-body">
+                  <h5>Nombre Apellido Apellido</h5>
+                  <h4 class="pt-1 pb-2">Puesto a ocupar</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card-img">
+                  <img src="https://via.placeholder.com/200/ff1d99/ffffff">
+                </div>
+                <div class="card-body">
+                  <h5>Nombre Apellido Apellido</h5>
+                  <h4 class="pt-1 pb-2">Puesto a ocupar</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card-img">
+                  <img src="https://via.placeholder.com/200/ff1d99/ffffff">
+                </div>
+                <div class="card-body">
+                  <h5>Nombre Apellido Apellido</h5>
+                  <h4 class="pt-1 pb-2">Puesto a ocupar</h4>
+                </div>
+              </div>
+            </div>
+            
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card-img">
+                  <img src="https://via.placeholder.com/200/ff1d99/ffffff">
+                </div>
+                <div class="card-body">
+                  <h5>Nombre Apellido Apellido</h5>
+                  <h4 class="pt-1 pb-2">Puesto a ocupar</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card-img">
+                  <img src="https://via.placeholder.com/200/ff1d99/ffffff">
+                </div>
+                <div class="card-body">
+                  <h5>Nombre Apellido Apellido</h5>
+                  <h4 class="pt-1 pb-2">Puesto a ocupar</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card-img">
+                  <img src="https://via.placeholder.com/200/ff1d99/ffffff">
+                </div>
+                <div class="card-body">
+                  <h5>Nombre Apellido Apellido</h5>
+                  <h4 class="pt-1 pb-2">Puesto a ocupar</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card-img">
+                  <img src="https://via.placeholder.com/200/ff1d99/ffffff">
+                </div>
+                <div class="card-body">
+                  <h5>Nombre Apellido Apellido</h5>
+                  <h4 class="pt-1 pb-2">Puesto a ocupar</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card-img">
+                  <img src="https://via.placeholder.com/200/ff1d99/ffffff">
+                </div>
+                <div class="card-body">
+                  <h5>Nombre Apellido Apellido</h5>
+                  <h4 class="pt-1 pb-2">Puesto a ocupar</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card-img">
+                  <img src="https://via.placeholder.com/200/ff1d99/ffffff">
+                </div>
+                <div class="card-body">
+                  <h5>Nombre Apellido Apellido</h5>
+                  <h4 class="pt-1 pb-2">Puesto a ocupar</h4>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+          
+          <!-- Add Arrows -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          
+          <hr style="width:100%;text-align:center;height:2px;background-color:#ff1d99;margin-bottom:0px;">
+        </div><!--End of swiper-container-->
+      </div>
+      <script src="../js/script.js"></script>
+      <!--End of sliding bar-->
+
+      <!--Social network-->
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col-md-12">
+              <h2 class="redessociales">Redes sociales</h2>
+          </div>
+        </div><!--End of row-->
+
+        <div class="row">
+          <div id="twitter-tile" class="col-md-4 col-sm-6 col-xs-12">
+            <a class="twitter-timeline" data-height="500" href="https://twitter.com/FXM_Jalisco?ref_src=twsrc%5Etfw">Tweets by FXM_Jalisco</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
+
+          <div id="facebook-tile" class="fb-page col-md-4 col-sm-6 col-xs-12" data-href="https://www.facebook.com/FuerzaPorMexicoJalisco" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+            <blockquote cite="https://www.facebook.com/FuerzaPorMexicoJalisco" class="fb-xfbml-parse-ignore">
+              <a href="https://www.facebook.com/FuerzaPorMexicoJalisco">Fuerza por México Jalisco</a>
+            </blockquote>
+          </div>
+
+          <div id="instagram-tile" class="taggbox-container col-md-4 col-sm-12 col-xs-12" style="height:500px;overflow: auto;">
+            <div class="taggbox-socialwall" data-wall-id="53750" view-url="https://widget.taggbox.com/53750"></div>
+            <script src="https://widget.taggbox.com/embed.min.js" type="text/javascript"></script>
+          </div>
+
+          <div id="youtube-tile" class="col-md-12 col-sm-12 col-xs-12">
+            <iframe width="100%" height="500" src="https://www.youtube.com/embed/O9xC0AusVOc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
         </div>
 
-        <!--Menu butons-->
-        <div id="collapsable-nav" class="collapse navbar-collapse">
-          <ul id="nav-list" class="nav navbar-nav navbar-right">
-            <li>
-              <a href="index.html">
-              <span class="glyphicon glyphicon-home"></span><br class="hidden-xs"> Inicio</a>
-            </li>
-            <li>
-              <a href="planilla.html">
-              <span class="glyphicon glyphicon-user"></span><br class="hidden-xs"> Planilla</a>
-            </li>
-            <li>
-              <a href="propuestas.html">
-              <span class="glyphicon glyphicon-bell"></span><br class="hidden-xs"> Propuestas</a>
-            </li>
-            <li>
-              <a href="tu_mandas.html">
-              <span class="glyphicon glyphicon-bullhorn"></span><br class="hidden-xs"> Tu mandas!</a>
-            </li>
-          </ul><!-- #nav-list -->
-        </div><!-- .collapse .navbar-collapse -->
-      </div><!-- .container -->
-    </nav><!-- #header-nav -->
+        <hr style="width:100%;text-align:center;height:2px;background-color:#ff1d99">
+      </div>
+      <!--End of social network-->
 
-  </header>
+      <!--Footer-->
+      <!--End of footer-->
 
+    </header>
 
-  <!-- jQuery (Bootstrap JS plugins depend on it) -->
-  <script src="js/jquery-2.1.4.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/script.js"></script>
-</body>
+    <!-- jQuery (Bootstrap JS plugins depend on it) -->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+
 </html>

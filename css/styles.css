@@ -1,7 +1,7 @@
 body {
   font-size: 16px;
-  color: #fff;
-  background-color: #61122f;
+  color: #ff1d99;
+  background-color: #ffffff;
   font-family: 'Oxygen', sans-serif;
 }
 
@@ -72,6 +72,108 @@ body {
 }
 /** END HEADER **/
 
+/** WELCOM **/
+#welcome {
+  background-color: #ffffff;
+  border-radius: 0;
+  border: 0;
+}
+
+.quelagente {
+  font-size: 3vw;
+  font-weight: bold;
+  text-align: center;
+  padding: 0px;
+  margin: 0px 0px 5px 0px;
+  line-height: 1;
+}
+
+/** END OF WELCOM **/
+
+/** SLIDING BAR **/
+.miembrosplanilla {
+  font-size: 40px;
+  font-weight: bold;
+  padding: 0px;
+  margin: 0px 0px 15px 0px;
+}
+
+.swiper-button-next{
+  color: #ff1d99;
+}
+
+.swiper-button-prev{
+  color: #ff1d99;
+}
+
+.divider {
+  border: 1px solid #ccc;
+}
+
+img {
+  width:100%;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 30px;
+  /* background: #fff; */
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+/** END OF SLIDING BAR **/
+
+/** SOCIAL NETWORKS **/
+.redessociales {
+  font-size: 40px;
+  font-weight: bold;
+  padding: 0px;
+  margin: 10px 0px 0px 0px;
+}
+
+#twitter-tile, #facebook-tile, #instagram-tile {
+  margin-top: 20px;
+  height: 500px;
+  width: 33%;
+  margin-bottom: 15px;
+  position: relative;
+  /* border: 2px solid #3F0C1F; */
+  overflow: hidden;
+}
+#twitter-tile:hover, #facebook-tile:hover, #instagram-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#youtube-tile {
+  margin-top: 20px;
+  height: 500px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  overflow: hidden;
+}
+#youtube-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+/** END OF SOCIAL NETWORKS **/
+
 /********** Large devices only **********/
 @media (min-width: 1200px) {
 
@@ -107,6 +209,11 @@ body {
     font-size: 1.4em;
   }
   /* End Header */
+
+  /* Welcome */
+  
+  /* End of Welcome */
+
 }
 
 /********** Small devices only **********/
@@ -139,6 +246,44 @@ body {
     font-size: 1.4em;
   }
   /* End Header */
+
+  /* Welcome */
+  .quelagente {
+    font-size: 30px;
+  }
+
+  .fotodelcandidato {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  /* End of Welcome */
+
+  /* Social Networks */
+  #twitter-tile, #facebook-tile {
+    margin-top: 20px;
+    height: 500px;
+    width: 50%;
+    margin-bottom: 15px;
+    position: relative;
+    /* border: 2px solid #3F0C1F; */
+    overflow: hidden;
+  }
+
+  #instagram-tile {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+    width: 100%;
+    /* margin-bottom: 15px; */
+    position: relative;
+  }
+
+  /* End of social networks */
 
 }
 
@@ -176,6 +321,32 @@ body {
  
   /* End Header */
 
+  /* Welcome */
+  .quelagente {
+    font-size: 30px;
+  }
+
+  .fotodelcandidato {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+  }
+
+  /* End of Welcome */
+
+  /* Social Networks */
+  #twitter-tile, #facebook-tile, #instagram-tile {
+    height: 500px;
+    width: 480px;
+    margin: 20px auto 15px;
+    /* position: relative; */
+    /* border: 2px solid #3F0C1F; */
+    overflow: hidden;
+  }
+
+  /* End of social networks */
+
 }
 
 /********** Super extra small devices only **********/
@@ -210,5 +381,19 @@ body {
   }
 
   /* End Header */
+
+  /* Welcome */
+  .quelagente {
+    font-size: 20px;
+  }
+
+  .fotodelcandidato {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+  }
+
+  /* End of Welcome */
 
 }
