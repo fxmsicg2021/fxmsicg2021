@@ -111,7 +111,7 @@ body {
 }
 
 img {
-  width:100%;
+  width:75%;
 }
 
 .swiper-container {
@@ -174,8 +174,35 @@ img {
 
 /** END OF SOCIAL NETWORKS **/
 
+/** FOOTER **/
+.panel-footer {
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #ff1d99;
+  border-top: 0;
+  color: #ffffff;
+}
+
+.panel-footer div.row {
+  margin-bottom: 35px;
+}
+
+#contacto, #redes {
+  line-height: 2;
+}
+#contacto > span, #redes > span {
+  font-size: 1.3em;
+}
+
+/** END OF FOOTER **/
+
 /********** Large devices only **********/
 @media (min-width: 1200px) {
+
+  .quelagente {
+    font-size: 50px;
+  }
 
 }
 
@@ -208,6 +235,11 @@ img {
   #nav-list a span {
     font-size: 1.4em;
   }
+
+  .quelagente {
+    font-size: 40px;
+  }
+
   /* End Header */
 
   /* Welcome */
@@ -285,6 +317,8 @@ img {
 
   /* End of social networks */
 
+  
+
 }
 
 /********** Extra small devices only **********/
@@ -347,6 +381,19 @@ img {
 
   /* End of social networks */
 
+  /* Footer */
+  .panel-footer section {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .panel-footer section:nth-child(2) {
+    margin-bottom: 0; /* margin already exists on the whole row */
+  }
+  .panel-footer section hr {
+    width: 50%;
+  }
+  /* End Footer */
+
 }
 
 /********** Super extra small devices only **********/
@@ -395,5 +442,30 @@ img {
   }
 
   /* End of Welcome */
+
+  /* Social Networks */
+  #twitter-tile, #facebook-tile, #instagram-tile {
+    height: 500px;
+    width: 480px;
+    margin: 20px auto 15px;
+    /* position: relative; */
+    /* border: 2px solid #3F0C1F; */
+    overflow: hidden;
+  }
+
+  /* End of social networks */
+
+  /* Footer */
+  .panel-footer section {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .panel-footer section:nth-child(2) {
+    margin-bottom: 0; /* margin already exists on the whole row */
+  }
+  .panel-footer section hr {
+    width: 50%;
+  }
+  /* End Footer */
 
 }
