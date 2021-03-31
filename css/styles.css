@@ -19,6 +19,10 @@ body {
   margin: 10px 10px 10px 10px;
 }
 
+#logo-img:hover {
+  opacity: 50%;
+}
+
 .navbar-brand {
   margin-top: 90px;
   padding-top: 10px;
@@ -37,6 +41,10 @@ body {
   line-height: .75;
   padding: 10px;
   border-radius: 10px;
+}
+
+.navbar-brand:hover {
+  opacity: 50%;
 }
 
 .navbar-brand a:hover, .navbar-brand a:focus {
@@ -73,6 +81,97 @@ body {
 /** END HEADER **/
 
 /** WELCOM **/
+
+.underconst {
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.collapsible {
+  background-color: #ff1d99;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 90%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+  margin: 0px auto 20px;
+  display: block;
+  font-size: 2em;
+}
+
+.active, .collapsible:hover {
+  opacity: 50%;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
+.planilla_foto_pres {
+  margin: 0;
+  width: 100%;
+}
+
+.planilla_foto_pres:hover {
+  opacity: 50%;
+}
+
+.planilla_nombre_pres {
+  font-size: 1.5vw;
+  font-weight: bold;
+}
+
+.planilla_puesto_pres {
+  font-size: 1vw;
+  font-weight: bold;
+}
+
+.planilla_foto_reg {
+  margin: 0;
+  width: 100%;
+}
+
+.planilla_foto_reg:hover {
+  opacity: 50%;
+}
+
+.planilla_nombre_reg {
+  font-size: 1vw;
+  font-weight: bold;
+  width: 100%;
+}
+
+.planilla_puesto_reg {
+  font-size: .8vw;
+  font-weight: bold;
+}
+
+.redes_candidato:hover {
+  opacity: 50%;
+}
+
+
 #welcome {
   background-color: #ffffff;
   border-radius: 0;
@@ -85,6 +184,15 @@ body {
   text-align: center;
   padding: 0px;
   margin: 0px 0px 5px 0px;
+  line-height: 1;
+}
+
+.quelagente_ind {
+  font-size: 3vw;
+  font-weight: bold;
+  text-align: center;
+  padding: 0px;
+  margin: 0px 0px 20px 0px;
   line-height: 1;
 }
 
@@ -115,6 +223,14 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 75px;
+}
+
+.fotodelcandidato:hover {
+  opacity: 50%;
+}
+
+.card-img:hover {
+  opacity: 50%;
 }
 
 /** END OF WELCOM **/
@@ -228,6 +344,10 @@ img {
   color: #ffffff;
 }
 
+.logos_redes:hover {
+  opacity: 50%;
+}
+
 /** END OF FOOTER **/
 
 /********** Large devices only **********/
@@ -239,7 +359,18 @@ img {
     width: 100%;
   }
 
+  .foto_candidato {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
   .quelagente {
+    font-size: 50px;
+  }
+
+  .quelagente_ind {
     font-size: 50px;
   }
 
@@ -283,6 +414,10 @@ img {
     font-size: 40px;
   }
 
+  .quelagente_ind {
+    font-size: 40px;
+  }
+
   .nombreypuesto {
     font-size: 40px;
   }
@@ -295,6 +430,24 @@ img {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+  }
+
+  .foto_candidato {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  .planilla_nombre_reg {
+    font-size: 1.4vw;
+    font-weight: bold;
+    width: 100%;
+  }
+  
+  .planilla_puesto_reg {
+    font-size: 1vw;
+    font-weight: bold;
   }
   
   /* End of Welcome */
@@ -338,7 +491,12 @@ img {
     font-size: 30px;
   }
 
+  .quelagente_ind {
+    font-size: 30px;
+  }
+
   .nombreypuesto {
+    margin-top: 20px;
     font-size: 30px;
   }
 
@@ -347,6 +505,24 @@ img {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+  }
+
+  .foto_candidato {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  .planilla_nombre_reg {
+    font-size: 1.5vw;
+    font-weight: bold;
+    width: 100%;
+  }
+  
+  .planilla_puesto_reg {
+    font-size: 1.1vw;
+    font-weight: bold;
   }
 
   /* End of Welcome */
@@ -415,6 +591,39 @@ img {
 
   /* Welcome */
 
+  .planilla_foto_pres {
+    display: block;
+    margin: 0px auto 0px;
+    width: 90%;
+  }
+  
+  .planilla_nombre_pres {
+    font-size: 5.5vw;
+    font-weight: bold;
+  }
+  
+  .planilla_puesto_pres {
+    font-size: 3vw;
+    font-weight: bold;
+  }
+
+  .planilla_foto_reg {
+    display: block;
+    margin: 0px auto 0px;
+    width: 90%;
+  }
+  
+  .planilla_nombre_reg {
+    font-size: 4vw;
+    font-weight: bold;
+    width: 100%;
+  }
+  
+  .planilla_puesto_reg {
+    font-size: 3vw;
+    font-weight: bold;
+  }
+
   .descripcion {
     margin-left: 20px;
     margin-right: 20px;
@@ -437,11 +646,22 @@ img {
     font-size: 30px;
   }
 
+  .quelagente_ind {
+    font-size: 30px;
+  }
+
   .nombreypuesto {
     font-size: 30px;
   }
 
   .fotodelcandidato {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+  }
+
+  .foto_candidato {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -512,6 +732,39 @@ img {
 
   /* Welcome */
 
+  .planilla_foto_pres {
+    display: block;
+    margin: 0px auto 0px;
+    width: 80%;
+  }
+  
+  .planilla_nombre_pres {
+    font-size: 5vw;
+    font-weight: bold;
+  }
+  
+  .planilla_puesto_pres {
+    font-size: 3vw;
+    font-weight: bold;
+  }
+
+  .planilla_foto_reg {
+    display: block;
+    margin: 0px auto 0px;
+    width: 80%;
+  }
+  
+  .planilla_nombre_reg {
+    font-size: 4vw;
+    font-weight: bold;
+    width: 100%;
+  }
+  
+  .planilla_puesto_reg {
+    font-size: 3vw;
+    font-weight: bold;
+  }
+
   .descripcion {
     margin-left: 20px;
     margin-right: 20px;
@@ -534,11 +787,22 @@ img {
     font-size: 20px;
   }
 
+  .quelagente_ind {
+    font-size: 20px;
+  }
+
   .nombreypuesto {
     font-size: 20px;
   }
 
   .fotodelcandidato {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+  }
+
+  .foto_candidato {
     display: block;
     margin-left: auto;
     margin-right: auto;
