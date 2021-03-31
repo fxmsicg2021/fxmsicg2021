@@ -88,6 +88,35 @@ body {
   line-height: 1;
 }
 
+
+.nombreypuesto {
+  background-color: #ff1d99;
+  color: #ffffff;
+  font-size: 3vw;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  margin: 50px 0px 5px 0px;
+  line-height: 1;
+  border-radius: 10px;
+}
+
+.descripcion {
+  font-weight: bold;
+  text-align: justify;
+  padding: 10px;
+  width: 100%;
+  margin: 0px auto 5px auto;
+  line-height: 1.2;
+}
+
+.redes_candidato {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75px;
+}
+
 /** END OF WELCOM **/
 
 /** SLIDING BAR **/
@@ -214,6 +243,10 @@ img {
     font-size: 50px;
   }
 
+  .nombreypuesto {
+    font-size: 50px;
+  }
+
 }
 
 /********** Medium devices only **********/
@@ -247,6 +280,10 @@ img {
   }
 
   .quelagente {
+    font-size: 40px;
+  }
+
+  .nombreypuesto {
     font-size: 40px;
   }
 
@@ -298,6 +335,10 @@ img {
   /* Welcome */
   
   .quelagente {
+    font-size: 30px;
+  }
+
+  .nombreypuesto {
     font-size: 30px;
   }
 
@@ -374,6 +415,18 @@ img {
 
   /* Welcome */
 
+  .descripcion {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 90%;
+  }
+
+  .nombreypuesto {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 90%;
+  }
+
   .mensajebienvenida {
     margin-left: 20px;
     margin-right: 20px;
@@ -381,6 +434,10 @@ img {
   }
 
   .quelagente {
+    font-size: 30px;
+  }
+
+  .nombreypuesto {
     font-size: 30px;
   }
 
@@ -455,6 +512,18 @@ img {
 
   /* Welcome */
 
+  .descripcion {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 90%;
+  }
+
+  .nombreypuesto {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 90%;
+  }
+
   .mensajebienvenida {
     margin-left: 20px;
     margin-right: 20px;
@@ -462,6 +531,10 @@ img {
   }
   
   .quelagente {
+    font-size: 20px;
+  }
+
+  .nombreypuesto {
     font-size: 20px;
   }
 
