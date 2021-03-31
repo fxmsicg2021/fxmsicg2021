@@ -195,6 +195,10 @@ img {
   font-size: 1.3em;
 }
 
+.row > section > a {
+  color: #ffffff;
+}
+
 /** END OF FOOTER **/
 
 /********** Large devices only **********/
