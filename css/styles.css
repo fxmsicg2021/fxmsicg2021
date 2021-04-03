@@ -82,6 +82,21 @@ body {
 
 /** WELCOM **/
 
+.index_candidato {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6em;
+  background-color: #ff1d99;
+  color: #fff;
+  opacity: .8;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
 .underconst {
   width: 25%;
   margin-left: auto;
