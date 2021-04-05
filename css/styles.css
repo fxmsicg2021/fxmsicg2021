@@ -82,6 +82,13 @@ body {
 
 /** WELCOM **/
 
+.planilla_todos {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
 .index_candidato {
   position: absolute;
   bottom: 0;
