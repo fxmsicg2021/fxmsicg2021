@@ -81,6 +81,16 @@ body {
 /** END HEADER **/
 
 /** WELCOM **/
+.cita_encabezado {
+  font-size: 30px;
+  text-align: center;
+  font-style: italic;
+}
+
+.subseccion {
+  font-size: 20px;
+  font-weight: 900;
+}
 
 .planilla_todos {
   width: 90%;
