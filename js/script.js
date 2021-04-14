@@ -1,5 +1,5 @@
 // Swiper script
-var swiper = new Swiper('.swiper-container', {
+var swiper1 = new Swiper('.swiper-container1', {
     slidesPerView: 1,
     spaceBetween: 1,
     slidesPerGroup: 1, 
@@ -30,13 +30,31 @@ var swiper = new Swiper('.swiper-container', {
     loop: true,
     loopFillGroupWithBlank: true,
     pagination: {
-      el: '.swiper-pagination',
+      el: '.swiper-pagination1',
       clickable: true,
     },
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+});
+
+// Swiper script 02
+var swiper2 = new Swiper('.swiper-container2', {
+  effect: 'coverflow',
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: 'auto',
+  coverflowEffect: {
+    rotate: 50,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: true,
+  },
+  pagination: {
+    el: '.swiper-pagination2',
+  },
 });
 
 // Collapsible script
