@@ -114,8 +114,11 @@ body {
   display: block;
 }
 
-.underconst {
-  width: 25%;
+.content_propuesta {
+  background-color: #ffffff;
+}
+.propuesta {
+  width: 500px;
   margin-left: auto;
   margin-right: auto;
   display: block;
